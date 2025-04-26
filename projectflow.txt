@@ -8,3 +8,7 @@ as git was tracking data before hand so we need to remove those by "git rm -r --
 The md5 inside data.dvc is the id we'll get evertime 
 7. "dvc commit" and then "dvc push" -> here 2 files saved as 1 is csv and other is id
 8. make changes to mycode.py to append new role in data, check changes via "dvc status"
+9. "dvc commit" and then "dvc push"
+10. "git add-commit-push"
+11. "dvc/git status"
+12. repeat same steps for 3rd version of the data
