@@ -12,3 +12,6 @@ The md5 inside data.dvc is the id we'll get evertime
 10. "git add-commit-push"
 11. "dvc/git status"
 12. repeat same steps for 3rd version of the data
+
+13. git checkout main
+14. dvc pull
