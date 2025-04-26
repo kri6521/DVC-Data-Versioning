@@ -1,0 +1,10 @@
+1. create mycode.py and add code to it
+2. pip install dvc
+3. "dvc init"
+4. "mkdir S3"
+5. "dvc remote add -d myremote S3"
+6. "dvc add data/"   -> for any changes in data folder, dvc is responsible now
+as git was tracking data before hand so we need to remove those by "git rm -r --cached 'data', then commit it then add the above command
+The md5 inside data.dvc is the id we'll get evertime 
+7. "dvc commit" and then "dvc push" -> here 2 files saved as 1 is csv and other is id
+8. make changes to mycode.py to append new role in data, check changes via "dvc status"
