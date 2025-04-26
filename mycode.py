@@ -1,0 +1,21 @@
+import pandas as pd
+import os
+
+# sample dataframe
+data = {
+    "Name": ["alice", "bob", "charlie"],
+    "Age": [25, 30, 35],
+    "City": ["new york", "los angeles", "chicago"],
+}
+
+df = pd.DataFrame(data)
+
+# ensure "data" directory exists at root level
+data_dir = "data"
+os.makedirs(data_dir, exist_ok=True)  # data name folder will be created
+
+file_path = os.path.join(data_dir, "sample_data.csv")
+
+df.to_csv(file_path, index=False)
+
+print(f"CSV file saved to {file_path}")
